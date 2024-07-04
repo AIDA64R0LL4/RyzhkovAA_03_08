@@ -13,9 +13,7 @@ private:
 	double price;
 	int countcarsinpark;
 	int numbercars;
-	string wordcars;
 	int numerreic;
-	string wordreic;
 
 public:
 
@@ -24,9 +22,7 @@ public:
 		price = 0;
 		countcarsinpark = 0;
 		numbercars = 0;
-		wordcars = "";
 		numerreic = 0;
-		wordreic = "";
 	}
 
 	void input()
@@ -36,9 +32,9 @@ public:
 		cout << "Введите количество единиц в парке ";
 		cin >> countcarsinpark;
 		cout << "Введите номер транспорта ";
-		cin >> numbercars >> wordcars;
+		cin >> numbercars;
 		cout << "Введите номер рейса ";
-		cin >> numerreic >> wordreic;
+		cin >> numerreic;
 	}
 
 	void stingfile()
@@ -49,8 +45,8 @@ public:
 			{
 				file << "Стоимость проезда " << price << " рублей " << endl;
 				file << "Количество единиц в парке " << countcarsinpark << endl;
-				file << "Номер транспорта " << numbercars << wordcars << endl;
-				file << "Номер рейса " << numbercars << wordreic << endl;
+				file << "Номер транспорта " << numbercars << endl;
+				file << "Номер рейса " << numbercars << endl;
 				file << "===========================" << endl;
 				file.close();
 			}
